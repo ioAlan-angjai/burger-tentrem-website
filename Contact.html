@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hubungi Kami | Burger Tentrem - Layanan Pelanggan & Lokasi</title>
+    <meta name="description" content="Hubungi Burger Tentrem via WhatsApp, Instagram, atau kunjungi kedai kami langsung. Kami siap melayani pertanyaan dan pesanan Anda dengan sepenuh hati.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #fdfdfd; color: #333; }
+        
+    
+        .navbar { background-color: #e62222 !important; padding: 12px 0; border-bottom: 3px solid #cc1d1d; }
+        .navbar-brand img { max-height: 50px; background-color: white; padding: 5px 12px; border-radius: 4px; }
+        .nav-link { color: #ffffff !important; font-weight: 700; margin: 0 10px; font-size: 0.8rem; text-transform: uppercase; }
+        .nav-link.active { color: #ffc107 !important; border-bottom: 2px solid #ffc107; }
+        .nav-link:hover, .nav-link.active {
+            color: #ffc107 !important; 
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #ffc107;
+            bottom: -5px;
+            left: 25%;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #e62222;
+                padding: 20px;
+                border-radius: 15px;
+                margin-top: 15px;
+            }
+        }
+
+     
+        .contact-header {
+            background: #222;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+            border-bottom: 5px solid #ffc107;
+        }
+        .contact-header h1 { font-family: 'Oswald'; font-size: 3.5rem; text-transform: uppercase; }
+
+        
+        .contact-method-card {
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .contact-method-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(230, 34, 34, 0.1); }
+        
+        .contact-icon {
+            width: 70px; height: 70px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 15px; font-size: 2rem; margin-bottom: 20px;
+            color: white;
+        }
+
+       
+        .form-control { border-radius: 10px; padding: 12px 15px; border: 2px solid #eee; }
+        .form-control:focus { border-color: #e62222; box-shadow: none; }
+        .btn-send { background: #e62222; color: white; font-weight: 800; border-radius: 10px; padding: 12px; border: none; transition: 0.3s; }
+        .btn-send:hover { background: #cc1d1d; transform: scale(1.02); }
+
+       
+        .map-container { border-radius: 25px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        footer { background-color: #e62222; color: white; padding: 60px 0 30px; margin-top: 80px; }
+        .footer-link { color: white; text-decoration: none; margin: 0 10px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo (2).png" alt="Burger Tentrem Logo">
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="layanan.html">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <header class="contact-header">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Hubungi Kami</h1>
+            <p class="lead opacity-75">Ada pertanyaan atau kritik? Kami siap mendengarkan Anda.</p>
+        </div>
+    </header>
+
+    <section class="py-5 mt-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <a href="https://wa.me/628123456789" class="text-decoration-none text-dark">
+                        <div class="contact-method-card p-4 text-center">
+                            <div class="contact-icon mx-auto" style="background: #25D366;"><i class="fab fa-whatsapp"></i></div>
+                            <h5 class="fw-bold">WhatsApp CS</h5>
+                            <p class="text-muted small">Chat cepat & pemesanan langsung via admin kami.</p>
+                            <span class="text-success fw-bold">Mulai Chat <i class="fas fa-chevron-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://instagram.com/burgertentrem" class="text-decoration-none text-dark">
+                        <div class="contact-method-card p-4 text-center">
+                            <div class="contact-icon mx-auto" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);"><i class="fab fa-instagram"></i></div>
+                            <h5 class="fw-bold">Instagram</h5>
+                            <p class="text-muted small">Follow kami untuk info promo & menu terbaru.</p>
+                            <span class="text-danger fw-bold">@burgertentrem <i class="fas fa-chevron-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://tiktok.com/@burgertentrem" class="text-decoration-none text-dark">
+                        <div class="contact-method-card p-4 text-center">
+                            <div class="contact-icon mx-auto" style="background: #000;"><i class="fab fa-tiktok"></i></div>
+                            <h5 class="fw-bold">TikTok</h5>
+                            <p class="text-muted small">Cek konten seru dan proses masak kami di TikTok.</p>
+                            <span class="fw-bold">Follow Us <i class="fas fa-chevron-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-center pt-4">
+                <div class="col-lg-6">
+                    <div class="bg-white p-5 shadow-lg" style="border-radius: 25px;">
+                        <h3 class="fw-bold mb-4" style="font-family: 'Oswald';">KIRIM PESAN</h3>
+                        <form action="#">
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">Nama Lengkap</label>
+                                <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">Alamat Email / No. WA</label>
+                                <input type="text" class="form-control" placeholder="Contoh: 0812xxxx">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold">Pesan Anda</label>
+                                <textarea class="form-control" rows="4" placeholder="Apa yang bisa kami bantu?"></textarea>
+                            </div>
+                            <button type="submit" class="btn-send w-100">KIRIM SEKARANG</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h3 class="fw-bold mb-4" style="font-family: 'Oswald';">LOKASI KEDAI</h3>
+                        <div class="d-flex mb-4">
+                            <div class="text-danger fs-3 me-3"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Alamat Pusat</h6>
+                                <p class="text-muted mb-0">Jl. Paingan, Sleman, Yogyakarta.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="text-danger fs-3 me-3"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Jam Operasional</h6>
+                                <p class="text-muted mb-0">Setiap Hari: 10:00 - 22:00 WIB</p>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31628.78853754964!2d110.36066265!3d-7.7848105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd576d4d%3A0xffd3ad996487e91!2sYogyakarta!5e0!3m2!1sid!2sid!4v1710000000000"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4" style="font-family: 'Oswald'; letter-spacing: 2px;">BURGER TENTREM</h2>
+            <div class="mb-4">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="menu.html" class="footer-link">Menu</a>
+                <a href="layanan.html" class="footer-link">Layanan</a>
+                <a href="locations.html" class="footer-link">Location</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <p class="small opacity-50 mt-4">&copy; 2026 BurgerTentrem - Masakan Lokal, Rasa Internasional.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

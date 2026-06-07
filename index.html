@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerTentrem | Burger Panggang Arang Legendaris Sejak 1987</title>
+    <meta name="description" content="Nikmati kelezatan Burger Tentrem, burger 100% daging sapi premium yang dipanggang langsung di atas api. Resep rahasia keluarga sejak 1987 kini hadir untuk Anda.">
+    <meta name="keywords" content="burger enak, burger tentrem, burger sapi premium, flame grilled burger, kuliner burger legendaris">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+    
+        .navbar { 
+            background-color: #e62222 !important; 
+            padding: 12px 0; 
+            border-bottom: 4px solid #cc1d1d; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .navbar-brand img { 
+            max-height: 55px; 
+            background-color: white; 
+            padding: 7px 15px; 
+            border-radius: 8px; 
+            transition: 0.3s;
+        }
+
+        .nav-link { 
+            color: #ffffff !important; 
+            font-weight: 700; 
+            margin: 0 12px; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #ffc107 !important; 
+        }
+
+   
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #ffc107;
+            bottom: -5px;
+            left: 25%;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #e62222;
+                padding: 20px;
+                border-radius: 15px;
+                margin-top: 15px;
+            }
+        }
+
+        .hero-section {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/burger10.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 6.5rem);
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: white;
+        }
+
+        .text-accent {
+            color: #ffc107;
+        }
+
+        .story-section {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+
+        .story-image-wrapper {
+            position: relative;
+            padding: 20px;
+        }
+
+        .story-image-wrapper img {
+            border-radius: 20px;
+            box-shadow: 20px 20px 0px #ffc107;
+            width: 100%;
+        }
+
+        .section-tag {
+            color: #e62222;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .story-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+
+      
+
+        footer {
+            background-color: #e62222;
+            color: white;
+            border-radius: 100% 100% 0 0 / 15% 15% 0 0;
+            padding: 100px 0 40px;
+            margin-top: 80px;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .footer-link:hover { color: #ffc107; }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo (2).png" alt="Burger Tentrem Logo">
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="layanan.html">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="hero-title fw-bold">THE STORY OF THE <br> <span class="text-accent">BURGER TENTREM</span></h1>
+            <p class="lead mt-3 fw-bold text-uppercase" style="letter-spacing: 3px; font-size: 1.1rem;">
+                Panggang dengan cinta, disajikan dengan bangga sejak 1987.
+            </p>
+            <div class="mx-auto bg-warning mt-4" style="height: 6px; width: 100px; border-radius: 10px;"></div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center py-5">
+            <h2 class="display-4 fw-bold mb-5" style="font-family: 'Oswald'; color: #e62222;">KENAPA PILIH KAMI?</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4 bg-white shadow-sm h-100">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <h3>100% Beef</h3>
+                        <p class="text-muted">Daging sapi pilihan kualitas premium tanpa bahan pengawet tambahan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4 bg-white shadow-sm h-100">
+                        <i class="fas fa-fire"></i>
+                        <h3>Flame Grilled</h3>
+                        <p class="text-muted">Setiap patty dipanggang langsung di atas api untuk mengunci kelembapan dan aroma.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box p-4 bg-white shadow-sm h-100">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Fresh Veggies</h3>
+                        <p class="text-muted">Sayuran segar organik yang diambil langsung dari petani lokal setiap hari.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="our-story" class="story-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="story-image-wrapper">
+                        <img src="images/hero1.jpeg" alt="Sejarah Burger Tentrem" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="section-tag">Warisan Rasa</span>
+                    <h2 class="story-title">Dari Garasi Kecil Menjadi <span class="text-danger">Legenda Rasa</span></h2>
+                    <p class="lead fw-bold text-dark">Perjalanan Burger Tentrem dimulai pada tahun 1987 dengan satu misi sederhana: menyajikan burger yang membuat hati tentrem.</p>
+                    <p class="text-muted">
+                        Berawal dari sebuah kedai kecil di pinggiran kota, pendiri kami percaya bahwa rahasia kelezatan burger bukan pada sausnya, melainkan pada kejujuran bahan dan teknik memanggangnya. Kami tetap setia menggunakan arang alami untuk memberikan aroma *smoky* yang tak tertandingi oleh panggangan gas modern.
+                    </p>
+                    <p class="text-muted">
+                        Setiap gigitan Burger Tentrem adalah perayaan tradisi kuliner yang dijaga selama puluhan tahun. Kami tidak hanya menjual makanan, kami menyajikan nostalgia dan komitmen terhadap kualitas yang tak pernah berubah.
+                    </p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-danger me-3 fs-4"></i>
+                            <span class="fw-bold">Resep Patty Rahasia Turun Temurun</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-check-circle text-danger me-3 fs-4"></i>
+                            <span class="fw-bold">Saus Buatan Rumah Tanpa MSG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="py-5" style="background-color: #ffffff;">
+        <div class="container py-4">
+            <div class="row align-items-end mb-5">
+                <div class="col-md-8">
+                    <span class="section-tag">Paling Dicari</span>
+                    <h2 class="display-5 fw-bold" style="font-family: 'Oswald';">MENU <span class="text-danger">FAVORIT</span> KAMI</h2>
+                </div>
+                <div class="col-md-4 text-md-end d-none d-md-block">
+                    <a href="menu.html" class="btn btn-outline-danger fw-bold px-4 py-2" style="border-radius: 4px;">LIHAT SEMUA MENU</a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden;">
+                        <img src="images/burger4.jpg" class="card-img-top" alt="Tentrem Signature" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold" style="font-family: 'Oswald';">TENTREM SIGNATURE</h4>
+                            <p class="text-muted small">Daging sapi 100% premium dengan lelehan keju double dan saus rahasia.</p>
+                            <h5 class="text-danger fw-bold mb-3">Rp 45.000</h5>
+                            <a href="" class="btn btn-danger w-100 fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden;">
+                        <div class="position-absolute bg-warning px-3 py-1 fw-bold" style="top: 15px; left: 15px; border-radius: 5px; font-size: 0.8rem; z-index: 1;">BEST SELLER</div>
+                        <img src="images/burger10.jpg" class="card-img-top" alt="Smoky BBQ" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold" style="font-family: 'Oswald';">SMOKY BBQ BEEF</h4>
+                            <p class="text-muted small">Aroma asap arang yang kuat dipadu dengan saus BBQ manis gurih yang melimpah.</p>
+                            <h5 class="text-danger fw-bold mb-3">Rp 48.000</h5>
+                            <a href="" class="btn btn-danger w-100 fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden;">
+                        <img src="images/kopi1.jpg" class="card-img-top" alt="Chicken Crispy" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold" style="font-family: 'Oswald';">KOPI SUSU TENTREM</h4>
+                            <p class="text-muted small">Fillet ayam goreng krispi dengan bumbu rempah spesial dan sayuran segar.</p>
+                            <h5 class="text-danger fw-bold mb-3">Rp 35.000</h5>
+                            <a href="" class="btn btn-danger w-100 fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 d-md-none">
+                <a href="menu.html" class="btn btn-outline-danger fw-bold w-100">LIHAT SEMUA MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-4" style="font-family: 'Oswald'; font-size: 2.5rem; letter-spacing: 2px;">BURGER TENTREM</h2>
+            <div class="mb-4">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="menu.html" class="footer-link">Menu</a>
+                <a href="locations.html" class="footer-link">Location</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="small opacity-75 mt-5">&copy; 2026 BurgerTentrem - Nikmati Kelezatan yang Hakiki!</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

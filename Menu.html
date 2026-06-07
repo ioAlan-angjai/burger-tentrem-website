@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Ceria - BurgerTentrem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+            body {
+                background-color: #ffffff;
+                color: #333333;
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+        
+            .navbar { 
+                background-color: #e62222 !important; 
+                padding: 12px 0; 
+                border-bottom: 4px solid #cc1d1d; 
+                box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            }
+
+            .navbar-brand img { 
+                max-height: 55px; 
+                background-color: white; 
+                padding: 7px 15px; 
+                border-radius: 8px; 
+                transition: 0.3s;
+            }
+
+            .nav-link { 
+                color: #ffffff !important; 
+                font-weight: 700; 
+                margin: 0 12px; 
+                font-size: 0.85rem; 
+                text-transform: uppercase; 
+                letter-spacing: 1.5px;
+                transition: 0.3s;
+                position: relative;
+            }
+
+            .nav-link:hover, .nav-link.active {
+                color: #ffc107 !important; 
+            }
+
+        
+            .nav-link.active::after {
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 3px;
+                background-color: #ffc107;
+                bottom: -5px;
+                left: 25%;
+                border-radius: 2px;
+            }
+
+            @media (max-width: 991px) {
+                .navbar-collapse {
+                    background-color: #e62222;
+                    padding: 20px;
+                    border-radius: 15px;
+                    margin-top: 15px;
+                }
+            }
+
+    
+            .hero-full-bg {
+                width: 100vw;
+                height: 65vh; 
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 0; left: 0; width: 100%; height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(230, 34, 34, 0.15); 
+            }
+
+            .carousel-title {
+                font-family: 'Oswald', sans-serif;
+                font-size: clamp(4rem, 15vw, 10rem);
+                font-weight: 700;
+                color: #ffffff;
+                text-transform: uppercase;
+                text-shadow: 4px 4px 0px #e62222;
+            }
+
+            .custom-nav {
+                background-color: #ffc107;
+                border-radius: 50%;
+                padding: 25px;
+                opacity: 1;
+            }
+
+        
+            .section-title {
+                font-family: 'Oswald', sans-serif;
+                color: #e62222;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+
+            .menu-card {
+                border: none;
+                padding: 20px;
+                transition: all 0.3s ease-in-out;
+                height: 100%;
+            }
+
+            .menu-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .menu-card img {
+                max-height: 220px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+            }
+
+            .menu-card h3 {
+                font-family: 'Oswald', sans-serif;
+                color: #333;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+
+            .price-tag {
+                background-color: #e62222;
+                color: white;
+                display: inline-block;
+                padding: 6px 25px;
+                border-radius: 50px;
+                font-weight: bold;
+                margin-top: 12px;
+                font-size: 1.1rem;
+            }
+
+
+        
+            footer {
+                background-color: #e62222;
+                color: white;
+                border-radius: 50% 50% 0 0 / 8% 8% 0 0;
+                padding: 60px 0 30px;
+            }
+
+            .footer-link {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: 600;
+                transition: 0.3s;
+            }
+
+            .footer-link:hover {
+                color: #ffc107;
+            }
+        </style>
+    </head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo (2).png" alt="Burger Tentrem Logo">
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="layanan.html">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-full-bg" style="background-image: url('images/burger10.jpg');">
+                    <div class="overlay-text"><h1 class="carousel-title">MENU</h1></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-full-bg" style="background-image: url('images/burger11.jpg');">
+                    <div class="overlay-text"><h1 class="carousel-title">YUMMY!</h1></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-full-bg" style="background-image: url('images/kopi10.jpg');">
+                    <div class="overlay-text"><h1 class="carousel-title">BOOST!</h1></div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon custom-nav" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon custom-nav" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <div class="container my-5 py-5 text-center">
+        <h2 class="display-4 section-title">Pilihan Terpopuler</h2>
+
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/burger1.jpg" alt="Classic Beef">
+                    <h3>Classic Beef</h3>
+                    <p class="small text-muted">Daging sapi pilihan dengan sayuran segar dan saus rahasia.</p>
+                    <div class="price-tag">Rp 45.000</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/burger2.jpg" alt="Double Cheese">
+                    <h3>Double Cheese</h3>
+                    <p class="small text-muted">Double meat, double cheese, double happiness!</p>
+                    <div class="price-tag">Rp 65.000</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/burger3.jpg" alt="Black Jack">
+                    <h3>Black Jack</h3>
+                    <p class="small text-muted">Sensasi lada hitam yang membakar selera makanmu.</p>
+                    <div class="price-tag">Rp 55.000</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/kentang2.jpg" alt="Potato Wedges">
+                    <h3>Potato Wedges</h3>
+                    <p class="small text-muted">Kentang potong lebar dengan bumbu rempah spesial.</p>
+                    <div class="price-tag">Rp 25.000</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/kopi1.jpg" alt="Iced Coffee Snug">
+                    <h3>Iced Coffee Snug</h3>
+                    <p class="small text-muted">Kopi susu dingin yang pas untuk menemani santaimu.</p>
+                    <div class="price-tag">Rp 28.000</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card">
+                    <img src="images/kopi3.jpg" alt="Espresso Pour">
+                    <h3>Sisi Kopi Brew</h3>
+                    <p class="small text-muted">Kopi seduh manual dengan aroma yang sangat kuat.</p>
+                    <div class="price-tag">Rp 22.000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <h3 class="fw-bold mb-4" style="font-family: 'Oswald', sans-serif; letter-spacing: 2px;">BurgerTentrem</h3>
+            <div class="mb-4">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Menu</a>
+                <a href="#" class="footer-link">Location</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+            <div class="mb-4">
+                <a href="#" class="text-white mx-3 fs-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-3 fs-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-3 fs-3"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <hr class="bg-white opacity-25">
+            <p class="small mb-0 mt-4">&copy; 2026 BurgerTentrem - Nikmati Burger & Kopi Terbaik di Kota!</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
